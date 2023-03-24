@@ -788,7 +788,7 @@ int BinarySearchTree<Key, Value>::getHeight(Node<Key, Value>* cur) const {
     }
     else 
     {
-        return max(getHeight(cur->getLeft()), getHeight(cur->getRight()))+1;
+        return std::max(getHeight(cur->getLeft()), getHeight(cur->getRight()))+1;
     }
     
 }
